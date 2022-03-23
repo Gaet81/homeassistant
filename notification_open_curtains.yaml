@@ -39,7 +39,8 @@ blueprint:
           integration: mobile_app
 
 # We will have two triggers, for the two different reminders. 
-# However, a reminder will be ignored if the door or window is already closed by then. 
+# However, a reminder will be ignored if the door or window is already closed by then.
+trigger:
 - platform: numeric_state
   entity_id: !input temperature_sensor
   below: !input temperature
